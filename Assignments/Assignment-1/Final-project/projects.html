@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+  <link rel="stylesheet" href="../Final-project/css/styles.css">
+  <style>
+    .project-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  margin-top: 10px;
+}
+
+.tech-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-list li {
+  background: #0fbcf9;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.project-links {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.project-links a {
+  text-decoration: none;
+  padding: 6px 12px;
+  background: #1e272e;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.project-links a:hover {
+  background: #0984e3;
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>Personal Portfolio</h1>
+    <ul>
+      <li><a href="../Final-project/index.html">Home</a></li>
+      <li><a href="../Final-project/projects.html">Projects</a></li>
+      <li><a href="../Final-project/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<!-- ===== PAGE HEADING + INTRO ===== -->
+<section>
+  <h2>My Projects</h2>
+  <p>
+    Below are some of the projects I have worked on during my learning journey.
+    These projects showcase my skills in frontend and backend web development.
+  </p>
+</section>
+
+<!-- ===== PROJECT GRID ===== -->
+<section>
+  <div class="project-grid">
+
+    <!-- Project 1 -->
+    <article class="project-card">
+      <img width="400" height="250" src="../Final-project/images/portfolio.jpg" alt="Portfolio Website">
+      <h3>Personal Portfolio</h3>
+      <p>
+        A responsive personal portfolio website created to showcase my skills,
+        projects, and contact information.
+      </p>
+      <ul class="tech-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Responsive Design</li>
+      </ul>
+      <div class="project-links">
+        <a href="#">Live Demo</a>
+        <a href="#">Source Code</a>
+      </div>
+    </article>
+
+    <!-- Project 2 -->
+    <article class="project-card">
+      <img width="400" height="250" src="../Final-project/images/admindashboard.jpg" alt="Dashboard">
+      <h3>Admin Dashboard</h3>
+      <p>
+        A dashboard layout built using CSS Grid and Flexbox with responsive
+        behavior across devices.
+      </p>
+      <ul class="tech-list">
+        <li>HTML</li>
+        <li>CSS Grid</li>
+        <li>Flexbox</li>
+      </ul>
+      <div class="project-links">
+        <a href="#">Live Demo</a>
+        <a href="#">Source Code</a>
+      </div>
+    </article>
+
+    <!-- Project 3 -->
+    <article class="project-card">
+      <img width="400" height="250" src="../Final-project/images/contactform.jpg" alt="Form Project">
+      <h3>Contact Form</h3>
+      <p>
+        A fully styled contact form with validation attributes and modern UI
+        design.
+      </p>
+      <ul class="tech-list">
+        <li>HTML Forms</li>
+        <li>CSS</li>
+        <li>Validation</li>
+      </ul>
+      <div class="project-links">
+        <a href="#">Live Demo</a>
+        <a href="#">Source Code</a>
+      </div>
+    </article>
+
+    <!-- Project 4 -->
+    <article class="project-card">
+      <img width="400" height="250" src="../Final-project/images/gallery.jpeg" alt="Gallery">
+      <h3>Image Gallery</h3>
+      <p>
+        A responsive image gallery created using Flexbox with equal spacing and
+        clean layout.
+      </p>
+      <ul class="tech-list">
+        <li>Flexbox</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+      <div class="project-links">
+        <a href="#">Live Demo</a>
+        <a href="#">Source Code</a>
+      </div>
+    </article>
+
+    <!-- Project 5 -->
+    <article class="project-card">
+      <img width="400" height="250" src="../Final-project/images/responsive.jpg" alt="Responsive">
+      <h3>Responsive Layout</h3>
+      <p>
+        A responsive multi-section layout that adapts smoothly across mobile,
+        tablet, and desktop screens.
+      </p>
+      <ul class="tech-list">
+        <li>Media Queries</li>
+        <li>CSS</li>
+        <li>HTML</li>
+      </ul>
+      <div class="project-links">
+        <a href="#">Live Demo</a>
+        <a href="#">Source Code</a>
+      </div>
+    </article>
+
+    <!-- Project 6 -->
+    <article class="project-card">
+      <img width="400" height="250" src="../Final-project/images/webpage.jpg" alt="Web App">
+      <h3>Web Application UI</h3>
+      <p>
+        A clean and modern web application interface designed with usability
+        and accessibility in mind.
+      </p>
+      <ul class="tech-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>UI Design</li>
+      </ul>
+      <div class="project-links">
+        <a href="#">Live Demo</a>
+        <a href="#">Source Code</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== PROJECT TABLE ===== -->
+<section>
+  <h2>Projects Summary</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Project Name</th>
+        <th>Category</th>
+        <th>Technologies</th>
+        <th>Completion Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Personal Portfolio</td>
+        <td>Web Design</td>
+        <td>HTML, CSS</td>
+        <td>2025</td>
+      </tr>
+      <tr>
+        <td>Admin Dashboard</td>
+        <td>UI Layout</td>
+        <td>CSS Grid, Flexbox</td>
+        <td>2025</td>
+      </tr>
+      <tr>
+        <td>Contact Form</td>
+        <td>Forms</td>
+        <td>HTML, CSS</td>
+        <td>2025</td>
+      </tr>
+      <tr>
+        <td>Image Gallery</td>
+        <td>Frontend</td>
+        <td>Flexbox</td>
+        <td>2025</td>
+      </tr>
+      <tr>
+        <td>Responsive Layout</td>
+        <td>Responsive Design</td>
+        <td>Media Queries</td>
+        <td>2025</td>
+      </tr>
+      <tr>
+        <td>Web App UI</td>
+        <td>UI Design</td>
+        <td>HTML, CSS</td>
+        <td>2025</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+</main>
+
+<footer>
+  <p>
+    © 2025 Manoj |
+    <a style="color:white;text-decoration: none;" href="https://github.com/manojm25" target="_blank" class="footer-link">
+      <i class="fa-brands fa-github"></i> GitHub
+    </a>
+    |
+    <a style="color:white;text-decoration: none;" href="https://www.linkedin.com/in/manoj-mariadass-3bb191178/" target="_blank" class="footer-link">
+      <i class="fa-brands fa-linkedin"></i> LinkedIn
+    </a>
+  </p>
+</footer>
+
+
+</body>
+</html>

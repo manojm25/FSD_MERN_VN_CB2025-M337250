@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Grid Dashboard</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+    }
+
+    /* Dashboard grid container */
+    .dashboard {
+      display: grid;
+
+      /* 1/4 + 2/4 + 1/4 */
+      grid-template-columns: 1fr 2fr 1fr;
+
+      /* Header | Content | Footer */
+      grid-template-rows: 80px 1fr 60px;
+
+      height: 100vh;
+    }
+
+    /* Common styling */
+    .header,
+    .sidebar,
+    .main,
+    .widgets,
+    .footer {
+      padding: 20px;
+      color: white;
+    }
+
+    .header {
+      grid-column: 1 / 4;   /* full width */
+      background: #2d3436;
+    }
+
+    .sidebar {
+      background: #636e72;
+    }
+
+    .main {
+      background: #0984e3;
+    }
+
+    .widgets {
+      background: #6c5ce7;
+    }
+
+    .footer {
+      grid-column: 1 / 4;   /* full width */
+      background: #2d3436;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dashboard">
+
+    <header class="header">
+      Header
+    </header>
+
+    <aside class="sidebar">
+      Sidebar
+    </aside>
+
+    <main class="main">
+      Main Content
+    </main>
+
+    <section class="widgets">
+      Widget Panel
+    </section>
+
+    <footer class="footer">
+      Footer
+    </footer>
+
+  </div>
+
+</body>
+</html>

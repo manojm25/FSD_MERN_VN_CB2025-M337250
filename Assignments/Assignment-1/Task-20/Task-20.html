@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Card Grid</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f1f2f6;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Grid container */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Large screens */
+      gap: 20px;
+    }
+
+    /* Card style */
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    /* Medium screens (768px - 1200px) */
+    @media (max-width: 1200px) {
+      .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* Small screens (480px - 768px) */
+    @media (max-width: 768px) {
+      .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Mobile screens (<480px) */
+    @media (max-width: 480px) {
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h2>Responsive Card Grid</h2>
+
+<div class="card-grid">
+  <div class="card">Card 1</div>
+  <div class="card">Card 2</div>
+  <div class="card">Card 3</div>
+  <div class="card">Card 4</div>
+  <div class="card">Card 5</div>
+  <div class="card">Card 6</div>
+  <div class="card">Card 7</div>
+  <div class="card">Card 8</div>
+</div>
+
+</body>
+</html>

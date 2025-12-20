@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+  <link rel="stylesheet" href="../Final-project/css/styles.css">
+  <style>
+    .contact-wrapper {
+  display: flex;
+  gap: 40px;
+  padding: 40px 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact-info {
+  max-width: 300px;
+  background: #f1f2f6;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>Personal Portfolio</h1>
+    <ul>
+      <li><a href="../Final-project/index.html">Home</a></li>
+      <li><a href="../Final-project/projects.html">Projects</a></li>
+      <li><a href="../Final-project/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="contact-wrapper">
+
+  <div class="contact-form">
+    <h2>Contact Me</h2>
+
+    <form>
+      <label>Full Name</label>
+      <input type="text" required placeholder="Your name">
+
+      <label>Email</label>
+      <input type="email" required placeholder="Your email">
+
+      <label>Phone</label>
+      <input type="tel">
+
+      <label>Subject</label>
+      <input type="text" required>
+
+      <label>Message</label>
+      <textarea required placeholder="Write your message"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <div class="contact-info">
+  <h3>Contact Info</h3>
+
+  <p>
+   
+    <a style="display: flex;" href="mailto:manojmariadass25@gmail.com" class="contact-link">
+   <span> <i class="fa-solid fa-envelope"></i></span> <span style="color: black;font-weight: 600;">&nbsp;Email:&nbsp;</span>manojmariadass25@gmail.com
+    </a>
+  </p>
+
+  <p>
+    <i class="fa-solid fa-phone"></i>
+    <strong>Phone:</strong>
+    <a href="tel:8870270447" class="contact-link">
+      8870270447
+    </a>
+  </p>
+
+  <p>
+    <i class="fa-solid fa-location-dot"></i>
+    <strong>Location:</strong>
+    Coimbatore, Tamilnadu, India
+  </p>
+
+  <h4>Connect with me</h4>
+  <div class="social-links">
+    <a href="https://github.com/manojm25" target="_blank">
+      <i class="fa-brands fa-github"></i> GitHub
+    </a>
+    <a href="https://www.linkedin.com/in/manoj-mariadass-3bb191178/" target="_blank">
+      <i class="fa-brands fa-linkedin"></i> LinkedIn
+    </a>
+  </div>
+</div>
+
+
+
+</section>
+
+</main>
+
+
+<footer>
+  <p>
+    © 2025 Manoj |
+    <a style="color:white;text-decoration: none;" href="https://github.com/manojm25" target="_blank" class="footer-link">
+      <i class="fa-brands fa-github"></i> GitHub
+    </a>
+    |
+    <a style="color:white;text-decoration: none;" href="https://www.linkedin.com/in/manoj-mariadass-3bb191178/" target="_blank" class="footer-link">
+      <i class="fa-brands fa-linkedin"></i> LinkedIn
+    </a>
+  </p>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card Component</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 40px;
+        }
+
+        .card {
+            width: 300px;
+            height: 400px;
+            background-color: #ffffff;
+            border: 2px dashed #ccc;     /* non-solid border */
+            border-radius: 10px;
+            padding: 15px;
+            margin: auto;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin: 0 0 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+            flex-grow: 1;
+        }
+
+        .card button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background-color: #43a047;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="../Task-10/images/304.jpg" alt="Card Image">
+        <h3>Card Title</h3>
+        <p>
+            This is a simple card component created using HTML and CSS.
+            It includes an image, text content, and a button.
+        </p>
+        <button>Read More</button>
+    </div>
+
+</body>
+</html>

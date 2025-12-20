@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Inline vs Block</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* Common link style */
+        a {
+            text-decoration: none;
+            color: white;
+            background: #0984e3;
+            padding: 10px 15px;
+            margin: 5px;
+        }
+
+        /* Inline navigation */
+        .inline-nav a {
+            display: inline;
+        }
+
+        /* Block navigation */
+        .block-nav a {
+            display: block;
+            width: 150px;
+            background: #6c5ce7;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Navigation using display: inline</h2>
+    <div class="inline-nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <hr><br>
+
+    <h2>Navigation using display: block</h2>
+    <div class="block-nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+</body>
+</html>

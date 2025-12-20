@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Navigation Menu</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Base navigation styles */
+    nav {
+      background-color: #2d3436;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      background-color: #636e72;
+    }
+
+    /* 📱 Mobile view (768px or smaller) */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column; /* stack vertically */
+        align-items: center;
+      }
+    }
+
+    /* 💻 Medium screens (768px - 1024px) */
+    @media (min-width: 768px) and (max-width: 1024px) {
+      nav {
+        background-color: #0984e3; /* background color change */
+      }
+    }
+
+    /* 🖥️ Desktop (above 768px) */
+    @media (min-width: 769px) {
+      nav ul {
+        flex-direction: row; /* horizontal menu */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+</body>
+</html>
